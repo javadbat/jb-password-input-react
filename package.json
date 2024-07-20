@@ -1,0 +1,34 @@
+{
+  "name": "jb-password-input-react",
+  "description": "password input react component",
+  "type": "module",
+  "author": {
+		"name": "mohammad javad bathaei",
+		"email": "javadbat@gmail.com"
+	},
+  "keywords": [
+    "jb",
+    "jb-password-input",
+    "password input",
+    "password",
+    "react",
+    "react component"
+  ],
+  "version": "0.0.1",
+  "bugs": "https://github.com/javadbat/jb-passwoed-input-react/issues",
+  "license": "MIT",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib/",
+    "dist/"
+  ],
+  "main": "index.js",
+  "repository": {
+		"type": "git",
+		"url": "git@github.com:javadbat/jb-password-input-react.git"
+  },
+  "dependencies": {
+    "jb-password-input": ">=0.0.1"
+  }
+}
