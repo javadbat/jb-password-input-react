@@ -47,7 +47,7 @@ const JBPasswordInput = React.forwardRef((props:Props, ref) => {
 });
 
 export type Props = JBInputProps & {
-  level: PasswordValidationLevel,
+  level?: PasswordValidationLevel,
 };
 JBPasswordInput.displayName = "JBPasswordInput";
 export {JBPasswordInput};

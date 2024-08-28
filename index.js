@@ -1,2 +1,1 @@
-import {JBPasswordInput} from './dist/JBPasswordInput.js';
-export {JBPasswordInput};
+export {JBPasswordInput} from './dist/JBPasswordInput.js';
