@@ -1,18 +1,16 @@
 import React, { useRef, useEffect, useState, useImperativeHandle } from 'react';
 import {type Props as JBInputProps } from 'jb-input-react';
 import {useJBInputAttribute } from 'jb-input-react/lib/attributes-hook';
-import {useJBInputEvents } from 'jb-input-react/lib/events-hook';
 import 'jb-password-input';
+
 // eslint-disable-next-line no-duplicate-imports
-import {JBPasswordInputWebComponent} from 'jb-password-input';
-import {PasswordValidationLevel} from 'jb-password-input/types';
+import {useJBInputEvents } from 'jb-input-react';
+// eslint-disable-next-line no-duplicate-imports
+import {type JBPasswordInputWebComponent} from 'jb-password-input';
+import {type PasswordValidationLevel} from 'jb-password-input/types';
 
 interface JBPasswordInputType extends React.DetailedHTMLProps<React.HTMLAttributes<JBPasswordInputWebComponent>, JBPasswordInputWebComponent> {
   "class"?: string,
-  "type"?: string,
-  "label"?:string,
-  "message"?:string,
-  "placeholder"?:string,
 }
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
@@ -34,13 +32,13 @@ const JBPasswordInput = React.forwardRef((props:Props, ref) => {
   useEffect(() => {
     refChangeCountSetter(refChangeCount + 1);
   }, [element.current]);
-  // useJBInputAttribute(element,props);
-  // useJBInputEvents(element,props);
-  // useEffect(() => {
-  //   if( props.level && typeof props.level === "string"){
-  //     element.current.level = props.level;
-  //   }
-  // }, [props.level]);
+  useJBInputAttribute(element,props);
+  useJBInputEvents(element,props);
+  useEffect(() => {
+    if( props.level && typeof props.level === "string"){
+      element.current.level = props.level;
+    }
+  }, [props.level]);
   return (
     <jb-password-input ref={element} class={props.className?props.className:''}>
       {props.children}
