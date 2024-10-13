@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState, useImperativeHandle } from 'react';
 import {type Props as JBInputProps } from 'jb-input-react';
-import {useJBInputAttribute } from 'jb-input-react/lib/attributes-hook';
+import {useJBInputAttribute } from 'jb-input-react/lib/attributes-hook.js';
 import 'jb-password-input';
 
 // eslint-disable-next-line no-duplicate-imports
