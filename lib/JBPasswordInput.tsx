@@ -7,7 +7,7 @@ import 'jb-password-input';
 import {useJBInputEvents } from 'jb-input-react';
 // eslint-disable-next-line no-duplicate-imports
 import {type JBPasswordInputWebComponent} from 'jb-password-input';
-import {type PasswordValidationLevel} from 'jb-password-input/types';
+import {type PasswordValidationLevel} from 'jb-password-input/types.js';
 
 interface JBPasswordInputType extends React.DetailedHTMLProps<React.HTMLAttributes<JBPasswordInputWebComponent>, JBPasswordInputWebComponent> {
   "class"?: string,
