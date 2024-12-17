@@ -1,10 +1,9 @@
 import React, { useRef, useEffect, useState, useImperativeHandle } from 'react';
-import {type Props as JBInputProps } from 'jb-input-react';
-import {useJBInputAttribute } from 'jb-input-react/lib/attributes-hook.js';
+import {type Props as JBInputProps, useJBInputAttribute } from 'jb-input/react';
 import 'jb-password-input';
 
 // eslint-disable-next-line no-duplicate-imports
-import {useJBInputEvents } from 'jb-input-react';
+import {useJBInputEvents } from 'jb-input/react';
 // eslint-disable-next-line no-duplicate-imports
 import {type JBPasswordInputWebComponent} from 'jb-password-input';
 import {type PasswordValidationLevel} from 'jb-password-input/types.js';
