@@ -1,4 +1,8 @@
 # jb-password-input-react
+
+> [!WARNING]  
+> this package is deprecated and moved to [jb-password-input/react](https://github.com/javadbat/jb-password-input/tree/main/react)
+
 password input react component
 this component props and functionality are all come from [jb-input-react](https://github.com/javadbat/jb-input-react) just for password input so for doc just read jb-input-react document
 in jb-time-input you can create a input special for time the advantage is:
